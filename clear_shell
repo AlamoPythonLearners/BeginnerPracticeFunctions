@@ -1,0 +1,20 @@
+def do_five(f):
+    f()
+    f()
+    f()
+    f()
+    f()
+
+def do_twenty(f):
+    do_five(f)
+    do_five(f)
+    do_five(f)
+    do_five(f)
+
+def print_space():
+    print('          ')
+
+def clear_screen():
+    do_twenty(print_space)
+    do_twenty(print_space)
+    print_space
